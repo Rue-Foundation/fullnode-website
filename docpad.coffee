@@ -12,36 +12,34 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://fullnode.berlin"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "FULL NODE"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Full Node"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "info@fullnode.berlin"
 
 			# Styles
 			styles: [
-				"/styles/twitter-bootstrap.css"
+				"//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 				"/styles/style.css"
 			]
 
@@ -49,8 +47,7 @@ docpadConfig = {
 			scripts: [
 				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
-				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
-				"/scripts/script.js"
+				"//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 			]
 
 
@@ -96,23 +93,13 @@ docpadConfig = {
 	# Plugins
 
 	plugins:
-		downloader:
-			downloads: [
-				{
-					name: 'Bootstrap'
-					path: 'src/files/vendor/twitter-bootstrap'
-					url: 'https://codeload.github.com/twbs/bootstrap/tar.gz/master'
-					tarExtractClean: true
-				}
-			]
 
 
 	# =================================
 	# DocPad Events
 
 	# Here we can define handlers for events that DocPad fires
-	# You can find a full listing of events on the DocPad Wiki
-	events:
+	# You can find a full listing of events on the DocPad Wiki events:
 
 		# Server Extend
 		# Used to add our own custom routes to the server before the docpad routes are added
