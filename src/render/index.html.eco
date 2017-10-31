@@ -1,0 +1,279 @@
+---
+layout: 'default'
+---
+
+<section class="landing">
+	<!-- Menu -->
+	<div class="navbar">
+		<div class="container">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Project name</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<% for document in @getCollection('pages').toJSON(): %>
+						<li
+							typeof="sioc:Page"
+							about="<%= document.url %>"
+							class="<%= 'active'	if @document.url is document.url %>"
+						>
+							<a href="<%= document.url %>" property="dc:title">
+								<%= document.title %>
+							</a>
+						</li>
+					<% end %>
+				</ul>
+			</div><!--/.navbar-collapse -->
+		</div>
+	</div>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<h2>
+						Decentralization Central
+					</h2>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<p>
+						Full Node is the backbone of your network—a workspace where you can learn, work, and grow together with other Blockchain companies on your mission to build the future. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+
+
+<section class="light">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h1>
+					Decentralization<br>
+					Central
+				</h1>
+				<p>
+					In the Blockchain community, we believe that information should be shared, continually reconciled, and truly public. This is also how we imagine a perfect place to work: a space without hierarchy, a space which lets everyone easily connect with each other to share information and exchange ideas. 
+				</p>
+				<button class="btn btn-primary btn-light">
+					Drop Us a Line
+				</button>
+				<button class="btn btn-primary btn-light">
+					Join Now
+				</button>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h2>
+					BLOCK-<br>
+					CHAIN<br>
+					COMMUNITY
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-12 col-xs-12">
+				<h3>
+					Build your Block
+				</h3>
+				<p>
+					Wanna close the door from time to time? Our lockable, private offices surrounded by glass walls can accommodate teams of 2, 4, or 6 people. They are fully furnished and include personal desks, ergonomic chairs, cabinets, whiteboards, and more. 
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<h3>
+					Stay Connected
+				</h3>
+				<p>
+					Join crypto-enthusiasts, entrepreneurs, blockchain startups, and freelancers in the Full Node open co-working area. You can reserve a fixed desk of your own or choose an open seat and start working.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<h3>
+					Dream Big
+				</h3>
+				<p>
+					Inspiration needed? We got you covered: From playful lounges, brainstorming rooms, and phone booths to audio boxes where you can record your podcast, there's enough space for you to build the blocks of your project. Need a power nap? Climb up to the sleep box and recharge. 
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="dark">
+	<div class="container">
+		<h2>
+			Amenities
+		</h2>
+		<div class="row">
+			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_1.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_2.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_3.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_4.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_5.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_6.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_7.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_8.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_9.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_10.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_11.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_12.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_13.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_14.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_15.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+				<img src="/images/icons/Element_16.svg">
+				<h4>
+					PLACEHOLDER
+				</h4>
+			</div>
+		</div>
+</section>
+
+
+<section class="light">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<h3>
+					Build your Block
+				</h3>
+				<p>
+					Wanna close the door from time to time? Our lockable, private offices surrounded by glass walls can accommodate teams of 2, 4, or 6 people. They are fully furnished and include personal desks, ergonomic chairs, cabinets, whiteboards, and more. 
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<h3>
+					Stay Connected
+				</h3>
+				<p>
+					Join crypto-enthusiasts, entrepreneurs, blockchain startups, and freelancers in the Full Node open co-working area. You can reserve a fixed desk of your own or choose an open seat and start working.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<h3>
+					Dream Big
+				</h3>
+				<p>
+					Inspiration needed? We got you covered: From playful lounges, brainstorming rooms, and phone booths to audio boxes where you can record your podcast, there's enough space for you to build the blocks of your project. Need a power nap? Climb up to the sleep box and recharge. 
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-2">
+				<h2>
+					Blockchain<br>
+					Capital<br>
+					Berlin
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<h2>
+					Join<br>
+					the<br>
+					Tribe
+				</h2>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<p>
+					Meet like-minded people building a decentralized future, learn from each other, and grow together. Whether you're a seasoned blockchain enthusiast or new to the space—follow our curated events program, run your own events, and be part of our community.
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+</section>
