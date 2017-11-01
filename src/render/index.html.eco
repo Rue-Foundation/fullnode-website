@@ -6,11 +6,6 @@ layout: 'default'
 	<!-- Menu -->
 	<div class="navbar">
 		<div class="container">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
@@ -34,6 +29,11 @@ layout: 'default'
 					<% end %>
 				</ul>
 			</div><!--/.navbar-collapse -->
+			<div class="pull-right">
+				<button class="btn btn-primary btn-light">
+					Join Now
+				</button>
+			</div>
 		</div>
 	</div>
 	<div class="header">
@@ -73,7 +73,7 @@ layout: 'default'
 					Join Now
 				</button>
 			</div>
-			<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+			<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 overlay">
 				<h2>
 					BLOCK-<br>
 					CHAIN<br>
@@ -82,15 +82,16 @@ layout: 'default'
 			</div>
 
 		</div>
+		<img class="image-bg-right child-element" src="/images/whiteboard.jpg">
 	</div>
-
-	<img class="image-bg-right child-element" src="/images/whiteboard.jpg">
 </section>
+
 <section class="light section-small parent-element">
 
-	<img class="image-bg-left child-element" src="/images/laptops.jpg">
 
 	<div class="container">
+		<img class="image-bg-left child-element" src="/images/laptops.jpg">
+
 		<div class="row">
 			<div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-12 col-xs-12">
 				<h3>
@@ -121,111 +122,111 @@ layout: 'default'
 </section>
 
 <section class="dark">
-	<div class="container" id="amenities">
+	<div class="container test-2">
 		<h2>
 			Amenities
 		</h2>
-		<div class="row">
-			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+		<div class="row amenities">
+			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_1.svg">
 				<h4>
-					PLACEHOLDER
+					24/7 Building Access
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_2.svg">
 				<h4>
-					PLACEHOLDER
+					Super Fast &#38; Super Secure Internet
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_3.svg">
 				<h4>
-					PLACEHOLDER
+					COFFEECIRCLE COFFEE
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_4.svg">
 				<h4>
-					PLACEHOLDER
+					BUSINESS-CLASS PRINTERS
 				</h4>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_5.svg">
 				<h4>
-					PLACEHOLDER
+					BLOCKCHAIN MEETUPS
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_6.svg">
 				<h4>
-					PLACEHOLDER
+					Unique hang-out areas
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_7.svg">
 				<h4>
-					PLACEHOLDER
+					Mail &#38; Package Handling
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_8.svg">
 				<h4>
-					PLACEHOLDER
+					Locker Room
 				</h4>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_9.svg">
 				<h4>
-					PLACEHOLDER
+					Community Manager
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_10.svg">
 				<h4>
-					PLACEHOLDER
+					Office Supplies
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_11.svg">
 				<h4>
-					PLACEHOLDER
+					Stocked coffee bar
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_12.svg">
 				<h4>
-					PLACEHOLDER
+					Event space with multimedia 
 				</h4>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-1 col-lg-offset-2 col-md-1 col-md-offset-2 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_13.svg">
 				<h4>
-					PLACEHOLDER
+					Private Phone booths
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_14.svg">
 				<h4>
-					PLACEHOLDER
+					Audio box
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_15.svg">
 				<h4>
-					PLACEHOLDER
+					Sleep box
 				</h4>
 			</div>
-			<div class="col-lg-1 col-lg-offset-1 col-md-1 col-sm-3 col-xs-6">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_16.svg">
 				<h4>
-					PLACEHOLDER
+					Flexible monthly subscriptions 
 				</h4>
 			</div>
 		</div>
@@ -261,7 +262,7 @@ layout: 'default'
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-2">
+			<div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-2 overlay">
 				<h2>
 					Blockchain<br>
 					Capital<br>
@@ -282,8 +283,8 @@ layout: 'default'
 					Meet like-minded people building a decentralized future, learn from each other, and grow together. Whether you're a seasoned blockchain enthusiast or new to the space—follow our curated events program, run your own events, and be part of our community.
 				</p>
 			</div>
+			<img class="image-bg-right" src="/images/person.jpg">
 		</div>
-
 
 	</div>
 </section>
