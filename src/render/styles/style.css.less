@@ -5,6 +5,8 @@
 @theme-dark: #1a1a1a;
 @theme-light: #f2f2f2;
 
+@ui-padding: 50px;
+
 body,html {
 	background: @theme-base;
 	width: 100%;
@@ -17,10 +19,50 @@ body,html {
 Typography
 ****************/
 
-h1,h2,h3,h4,h5,h6 {
-	
+@font-face {
+    font-family: 'apercubold';
+    src: url('/fonts/apercu_bold-webfont.woff2') format('woff2'), url('/fonts/apercu_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'apercumedium';
+    src: url('/fonts/apercu_medium-webfont.woff2') format('woff2'), url('/fonts/apercu_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'apercu_monoregular';
+    src: url('/fonts/apercu_mono-webfont.woff2') format('woff2'), url('/fonts/apercu_mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'apercumedium';
+	color: @theme-color;
+}
+
+h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+}
+
+p {
+	color: @theme-dark;
+}
+
+/**************
+Navbars
+**************/
+
+.navbar {
+	margin: 0;
+	padding: 0;
+}
+
+/************
+Containers
+************/
 
 section {
 	padding: 0;
@@ -45,6 +87,10 @@ section.dark {
 	background: @theme-dark;
 }
 
+section.section-small {
+	min-height: auto;
+}
+
 .header {
 	background: @theme-color;
 	position: absolute;
@@ -52,15 +98,82 @@ section.dark {
 	bottom: 0;
 	margin: 0;
 	padding: 0;
-}
-
-.navbar {
-	margin: 0;
-	padding: 0;
+	h1, h2, h3, h4, h5, h6, p {
+		color: @theme-light;
+	}
 }
 
 .container {
 	display: block;
 	width: 95%;
 	margin: 0 auto;
+	padding: @ui-padding;
+}
+
+/****************
+Image Placement
+****************/
+
+.btn-primary {
+	background: transparent;
+	color: @theme-dark;
+	font-family: 'apercu_monoregular';
+	text-transform: uppercase;
+	border-color: @theme-dark;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: none;
+	padding-left: @ui-padding/2;
+	padding-right: @ui-padding/2;
+}
+
+
+/****************
+Image Placement
+****************/
+
+.parent-element {
+    position: relative;
+}
+
+.child-element-center {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.child-element {
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+
+.image-bg-right {
+	position: absolute;
+	right: 0;
+	max-width: 50%;
+}
+
+.image-bg-left {
+	position: absolute;
+	left: 0;
+	max-width: 33%;
+	max-height: 100%;
+}
+
+/****************
+Content-Specific
+****************/
+
+#amenities {
+	h1 {
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }

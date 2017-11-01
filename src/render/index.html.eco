@@ -55,10 +55,10 @@ layout: 'default'
 </section>
 
 
-<section class="light">
+<section class="light parent-element">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 				<h1>
 					Decentralization<br>
 					Central
@@ -73,14 +73,24 @@ layout: 'default'
 					Join Now
 				</button>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
 				<h2>
 					BLOCK-<br>
 					CHAIN<br>
 					COMMUNITY
 				</h2>
 			</div>
+
 		</div>
+	</div>
+
+	<img class="image-bg-right child-element" src="/images/whiteboard.jpg">
+</section>
+<section class="light section-small parent-element">
+
+	<img class="image-bg-left child-element" src="/images/laptops.jpg">
+
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-12 col-xs-12">
 				<h3>
@@ -111,7 +121,7 @@ layout: 'default'
 </section>
 
 <section class="dark">
-	<div class="container">
+	<div class="container" id="amenities">
 		<h2>
 			Amenities
 		</h2>
