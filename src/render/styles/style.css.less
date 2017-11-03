@@ -123,7 +123,7 @@ section.dark {
 }
 
 section.section-small {
-	min-height: auto;
+	min-height: 75vh;
 }
 
 .header {
@@ -165,6 +165,28 @@ section.section-small {
 	padding: @ui-padding;
 }
 
+.table-row {
+	display: table;
+	table-layout: fixed;
+}
+
+.table-row [class^="col-"] {
+	display: table-cell;
+	float: none;
+}
+
+footer {
+	background: @theme-dark;
+	padding: @ui-padding;
+	p {
+		text-align: center;
+		color: @theme-light;
+		padding-right: 25px;
+	}
+	i {
+		padding-left: 3px;
+	}
+}
 /****************
 Components
 ****************/
@@ -224,8 +246,14 @@ Image Placement
 .image-bg-left {
 	position: absolute;
 	left: 0;
-	max-width: 33%;
-	max-height: 100%;
+	width: 25%;
+}
+
+.image-bg-right-2 {
+	position: absolute;
+	right: 0;
+	max-width: 40%;
+	z-index: 1 !important;
 }
 
 /****************
@@ -234,20 +262,25 @@ Content-Specific
 
 .overlay {
 	text-align: right;
+	z-index: 100;
+	h2 {
+		width:100%;
+		position:absolute;
+		bottom:0;
+	}
 }
 
 #description {
-	height: 100%;
+	height: 80vh;
 	p {
 		margin: @ui-padding 0;
 	}
 	button {
 		min-width: @ui-padding;
+		margin-top: @ui-padding;
 	}
 	img {
 		z-index: 1 !important;
 	}
-	h1,h2,h3,h4,h5,h6 {
-		z-index: 2 !important;
-	}
+
 }

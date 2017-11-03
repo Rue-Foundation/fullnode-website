@@ -39,9 +39,14 @@
 
 		<!-- Footer -->
 		<footer>
-			<p class="pull-left">&copy; Full Node <%- (new Date()).getFullYear() %></p>
+			<p>
+				FULL NODE Skalitzer Strasse 123, 13456 Berlin, Germany, info@fullnode.berlin
+
+				<i class="fa fa-facebook-square"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-twitter-square"></i>
+			</p>
 		</footer>
-	</div><!-- /container -->
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
