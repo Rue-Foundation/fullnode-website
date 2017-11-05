@@ -43,6 +43,7 @@ h1,h2,h3,h4,h5,h6 {
 	color: @theme-color;
 	z-index: 10 !important;
 	letter-spacing: -1px;
+	margin-top: 0;
 }
 
 h1 {
@@ -123,7 +124,7 @@ section.dark {
 }
 
 section.section-small {
-	min-height: 75vh;
+	min-height: auto;
 }
 
 .header {
@@ -230,6 +231,11 @@ Image Placement
    transform: translate(-50%, -50%);
 }
 
+.child-element-top {
+   position: absolute;
+   top: @ui-padding;
+}
+
 .child-element {
    position: absolute;
    top: 50%;
@@ -263,15 +269,14 @@ Content-Specific
 .overlay {
 	text-align: right;
 	z-index: 100;
-	h2 {
+	/*h2 {
 		width:100%;
-		position:absolute;
+		position:relative;
 		bottom:0;
-	}
+	}*/
 }
 
 #description {
-	height: 80vh;
 	p {
 		margin: @ui-padding 0;
 	}
@@ -282,5 +287,28 @@ Content-Specific
 	img {
 		z-index: 1 !important;
 	}
+	.container {
+		height: 100%;
+	}
 
+}
+
+#whiteboard {
+	background: url('/images/whiteboard_line.png');
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+    padding-right: 10px;
+    margin-right: -10px;
+}
+
+.blue-block {
+	background-color: @theme-color !important;
+	border-radius: @ui-padding;
+	h1,h2,h3,h4,h5,h6,p {
+		color: @theme-light;
+	}
+	width: 100%;
+	height: 100%;
 }
