@@ -26,10 +26,12 @@ layout: 'default'
 					</p>
 				</div>
 			</div>
-			<hr>
-			<p class="mono center">
-				Coming Soon
-			</p>
+			<div class="row">
+				<hr>
+				<p class="mono center">
+					Coming Soon
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
@@ -59,8 +61,9 @@ layout: 'default'
 					CHAIN<br>
 					COMMUNITY
 				</h2>
+				<img class="image-bleed" src="/images/whiteboard_line.png">
 			</div>
-			<img class="image-bg-right child-element-top" src="/images/whiteboard_line.png">
+			<!--<img class="image-bg-right child-element-top" src="/images/whiteboard_line.png">-->
 		</div>
 		
 	</div>
@@ -68,10 +71,11 @@ layout: 'default'
 
 <section class="light section-small">
 	<div class="container">
-		<img class="image-bg-left" src="/images/laptops_line.png">
-
 		<div class="row">
-			<div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-12 col-xs-12">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<img class="image-bleed" src="/images/laptops_line.png">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 				<h3>
 					Build your Block
 				</h3>
@@ -244,12 +248,13 @@ layout: 'default'
 <section class="light">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-2 overlay">
+			<div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-2 overlay">
 				<h2>
 					Blockchain<br>
 					Capital<br>
 					Berlin
 				</h2>
+				<img class="image-bleed" src="/images/person_line.png">
 			</div>
 		</div>
 		<div class="row">

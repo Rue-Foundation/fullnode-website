@@ -6,6 +6,7 @@
 @theme-light: #f2f2f2;
 
 @ui-padding: 50px;
+@container-inverse-padding: -65px;
 
 body,html {
 	background: @theme-base;
@@ -96,6 +97,7 @@ section.landing {
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;
+    padding-top: @ui-padding;
 }
 
 section.light {
@@ -104,9 +106,8 @@ section.light {
 
 section.dark {
 	background: @theme-dark;
-	.row {
-		margin: @ui-padding auto;
-	}
+	padding-top: @ui-padding;
+	padding-bottom: @ui-padding;
 	img {
 		display: block;
 		margin: 25px auto;
@@ -134,6 +135,7 @@ section.section-small {
 	bottom: 0;
 	margin: 0;
 	padding: 0;
+	padding-top: @ui-padding/2;
 	h1, h2, h3, h4, h5, h6, p {
 		color: @theme-light;
 	}
@@ -152,16 +154,22 @@ section.section-small {
 	img {
 		top: @ui-padding !important;
 	}
-	.container {
-		padding-bottom: 15px;
+	.row {
+		padding: 0;
+		padding: 15px 0;
+		margin-left: 15px;
+		margin-right: 15px;
 	}
-}
-.navigation {
 }
 
 .container {
 	display: block;
-	width: 95%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.row {
 	margin: 0 auto;
 	padding: @ui-padding;
 }
@@ -262,18 +270,20 @@ Image Placement
 	z-index: 1 !important;
 }
 
+.image-bleed {
+	max-width: 100%;
+	margin-right: @container-inverse-padding;
+	margin-left: @container-inverse-padding;
+	z-index: 1 !important;
+}
+
 /****************
 Content-Specific
 ****************/
 
 .overlay {
 	text-align: right;
-	z-index: 100;
-	/*h2 {
-		width:100%;
-		position:relative;
-		bottom:0;
-	}*/
+	z-index: 100 !important;
 }
 
 #description {
@@ -291,16 +301,6 @@ Content-Specific
 		height: 100%;
 	}
 
-}
-
-#whiteboard {
-	background: url('/images/whiteboard_line.png');
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;
-    padding-right: 10px;
-    margin-right: -10px;
 }
 
 .blue-block {
