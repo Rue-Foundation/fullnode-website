@@ -92,7 +92,7 @@ section {
 }
 
 section.landing {
-    background: url(/images/header.jpg) no-repeat center center;
+    background: url(/images/header_canvas.jpg) no-repeat center center;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
@@ -160,6 +160,9 @@ section.section-small {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+	#tagline {
+		padding-bottom: 0;
+	}
 }
 
 .container {
@@ -192,8 +195,15 @@ footer {
 		color: @theme-light;
 		padding-right: 25px;
 	}
-	i {
-		padding-left: 3px;
+	.social-media {
+		display: inline;
+		margin-left: 25px;
+		a, a:hover, a:active, a:focus, a:visited {
+			color: @theme-light;
+			font-size: 18px;
+			text-decoration: none;
+			padding-right: 5px;
+		}
 	}
 }
 /****************
@@ -280,6 +290,19 @@ Image Placement
 /****************
 Content-Specific
 ****************/
+
+#logo {
+	width: 100%;
+	max-width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+#join {
+	position: absolute;
+	top: @ui-padding;
+	right: @ui-padding;
+}
 
 .overlay {
 	text-align: right;

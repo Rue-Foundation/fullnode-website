@@ -42,9 +42,17 @@
 			<p>
 				FULL NODE Skalitzer Strasse 123, 13456 Berlin, Germany, info@fullnode.berlin
 
-				<i class="fa fa-facebook-square"></i>
-				<i class="fa fa-instagram"></i>
-				<i class="fa fa-twitter-square"></i>
+				<span class="social-media">
+					<a href="http://www.facebook.com/fullnode.berlin" target="_blank">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+					<a href="http://www.instagram.com/fullnode_berlin" target="_blank">
+						<i class="fa fa-instagram"></i>
+					</a>
+					<a href="http://www.twitter.com/fullnode_berlin" target="_blank">
+						<i class="fa fa-twitter-square"></i>
+					</a>
+				</div>
 			</p>
 		</footer>
 
