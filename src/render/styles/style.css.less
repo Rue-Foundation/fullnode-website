@@ -285,6 +285,7 @@ Image Placement
 	margin-right: @container-inverse-padding;
 	margin-left: @container-inverse-padding;
 	z-index: 1 !important;
+	opacity: 0.8;
 }
 
 /****************
@@ -334,4 +335,25 @@ Content-Specific
 	}
 	width: 100%;
 	height: 100%;
+}
+
+.bottom {
+	position: absolute;
+	bottom: @ui-padding;
+	right: @ui-padding;
+}
+
+.top {
+	position: absolute;
+	top: @ui-padding;
+	right: @ui-padding;
+}
+
+#laptops {
+	margin-top: -26px;
+}
+
+#desk {
+	z-index: 101;
+	max-height: 400px;
 }
