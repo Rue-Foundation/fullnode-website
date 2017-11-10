@@ -260,24 +260,10 @@ Image Placement
    transform: translate(0, -50%);
 }
 
-.image-bg-right {
-	position: absolute;
-	right: 0;
-	max-width: 50%;
-	z-index: 1 !important;
-}
-
-.image-bg-left {
-	position: absolute;
-	left: 0;
-	width: 25%;
-}
-
-.image-bg-right-2 {
-	position: absolute;
-	right: 0;
-	max-width: 40%;
-	z-index: 1 !important;
+.child-element-2-3 {
+   position: absolute;
+   bottom: 0;
+   left: 20%;
 }
 
 .image-bleed {
@@ -285,7 +271,60 @@ Image Placement
 	margin-right: @container-inverse-padding;
 	margin-left: @container-inverse-padding;
 	z-index: 1 !important;
-	opacity: 0.8;
+}
+
+.overlay {
+	text-align: right;
+	z-index: 100 !important;
+}
+
+.blue-block {
+	background-color: @theme-color !important;
+	padding: @ui-padding;
+	h1,h2,h3,h4,h5,h6,p {
+		color: @theme-light;
+	}
+	height: 250px;
+}
+
+.rounded-right {
+	border-top-right-radius: @ui-padding*2;
+	border-bottom-right-radius: @ui-padding*2;
+}
+
+.rounded-left {
+	border-top-left-radius: @ui-padding*2;
+	border-bottom-left-radius: @ui-padding*2;
+}
+
+.bottom {
+	position: absolute;
+	bottom: @ui-padding;
+	right: @ui-padding;
+}
+
+.top {
+	position: absolute;
+	top: @ui-padding;
+	right: @ui-padding;
+}
+
+.col-bleed-left {
+	margin-left: -65px;
+	padding-left: 65px;
+	margin-right: -15px;
+	padding-right: 15px;
+}
+
+.col-bleed-right {
+	margin-right: -65px;
+	padding-right: 65px;
+	p {
+		text-align: center;
+		margin-top: -50%;
+		margin-bottom: -50%;
+		padding: 0;
+	}
 }
 
 /****************
@@ -305,10 +344,6 @@ Content-Specific
 	right: @ui-padding;
 }
 
-.overlay {
-	text-align: right;
-	z-index: 100 !important;
-}
 
 #description {
 	p {
@@ -327,33 +362,16 @@ Content-Specific
 
 }
 
-.blue-block {
-	background-color: @theme-color !important;
-	border-radius: @ui-padding;
-	h1,h2,h3,h4,h5,h6,p {
-		color: @theme-light;
-	}
-	width: 100%;
-	height: 100%;
-}
-
-.bottom {
-	position: absolute;
-	bottom: @ui-padding;
-	right: @ui-padding;
-}
-
-.top {
-	position: absolute;
-	top: @ui-padding;
-	right: @ui-padding;
-}
-
 #laptops {
 	margin-top: -26px;
 }
 
 #desk {
-	z-index: 101;
-	max-height: 400px;
+	max-width: 400px;
+	z-index: 101 !important;
 }
+
+#building {
+	margin-top: @ui-padding;
+}
+

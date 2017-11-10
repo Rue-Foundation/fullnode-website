@@ -247,11 +247,12 @@ layout: 'default'
 </section>
 <section class="light">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-12 col-xs-12 overlay">
-				<img id="desk" src="/images/desk_line.png">
+		<div class="row parent-element">
+			<img id="desk" class="child-element-2-3" src="/images/desk_line.png">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<img id="building" class="image-bleed" src="/images/building_side.jpg">
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 overlay">
+			<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-12 col-xs-12 overlay">
 				<h2 class="top">
 					Blockchain<br>
 					Capital<br>
@@ -261,17 +262,28 @@ layout: 'default'
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-				<h2>
-					Join<br>
-					the<br>
-					Tribe
-				</h2>
+			<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+				<div class="blue-block col-bleed-left">
+					<h2>
+						Join<br>
+						the<br>
+						Tribe
+					</h2>
+				</div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 blue-block">
 				<p>
 					Meet like-minded people building a decentralized future, learn from each other, and grow together. Whether you're a seasoned blockchain enthusiast or new to the space—follow our curated events program, run your own events, and be part of our community.
 				</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 blue-block rounded-right">
+			</div>
+			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-12 col-xs-12">
+				<div class="blue-block rounded-left col-bleed-right">
+					<p class="mono center">
+						Next Event
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
