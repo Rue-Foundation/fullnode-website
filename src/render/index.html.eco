@@ -5,7 +5,6 @@ layout: 'default'
 <section class="landing">
 	<div class="navigation">
 		<div class="container">
-			<img id="logo" src="/images/logo.png">
 			<div id="join" class="pull-right">
 				<button class="btn btn-primary btn-light">
 					Join Now
@@ -64,12 +63,6 @@ layout: 'default'
 				<img class="image-bleed" src="/images/whiteboard_line.png">
 			</div>
 		</div>
-		
-	</div>
-</section>
-
-<section class="light section-small">
-	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 				<img id="laptops" class="image-bleed" src="/images/laptops_line.png">
@@ -103,7 +96,7 @@ layout: 'default'
 </section>
 
 <section class="dark">
-	<div class="container test-2">
+	<div class="container">
 		<h2>
 			Amenities
 		</h2>
@@ -213,8 +206,7 @@ layout: 'default'
 		</div>
 </section>
 
-
-<section class="light section-small">
+<section class="light">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -242,11 +234,7 @@ layout: 'default'
 				</p>
 			</div>
 		</div>
-	</div>
-</section>
 
-<section class="light">
-	<div class="container">
 		<div class="row parent-element">
 			<img id="desk" class="child-element-2-3" src="/images/desk_line.png">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -292,8 +280,8 @@ layout: 'default'
 <section class="light section-small">
 	<div class="container">
 		<div class="col-lg-12">
-			<p class="announcement">
-				To get the latest updates just submit your <input type="text" class="announcement-email" name="email" placeholder="Email address" /> <button type="submit">AND GO</button>
+			<p class="mailing-list">
+				To get the latest updates just submit your <input type="text" class="email" name="email" placeholder="Email address" /> <button type="submit">AND GO</button>
 			</p>
 		</div>
 	</div>

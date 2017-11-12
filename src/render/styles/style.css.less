@@ -71,14 +71,6 @@ p {
 	text-transform: uppercase;	
 }
 
-/**************
-Navbars
-**************/
-
-.navbar {
-	margin: 0;
-	padding: 0;
-}
 
 /************
 Containers
@@ -89,6 +81,11 @@ section {
 	margin: 0;
 	width: 100%;
 	min-height: 100vh;
+	padding: @ui-padding 0;
+}
+
+section.section-small {
+	min-height: auto;
 }
 
 section.landing {
@@ -97,17 +94,15 @@ section.landing {
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;
-    padding-top: @ui-padding;
 }
 
 section.light {
 	background: @theme-light;
 }
 
+/* Amenities section */
 section.dark {
 	background: @theme-dark;
-	padding-top: @ui-padding;
-	padding-bottom: @ui-padding;
 	img {
 		display: block;
 		margin: 25px auto;
@@ -124,8 +119,26 @@ section.dark {
 	}
 }
 
-section.section-small {
-	min-height: auto;
+.container {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin: 0 auto;
+	padding: @ui-padding;
+}
+
+.table-row {
+	display: table;
+	table-layout: fixed;
+}
+
+.table-row [class^="col-"] {
+	display: table-cell;
+	float: none;
 }
 
 .header {
@@ -165,39 +178,17 @@ section.section-small {
 	}
 }
 
-.container {
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.row {
-	margin: 0 auto;
-	padding: @ui-padding;
-}
-
-.table-row {
-	display: table;
-	table-layout: fixed;
-}
-
-.table-row [class^="col-"] {
-	display: table-cell;
-	float: none;
-}
-
 footer {
 	background: @theme-dark;
 	padding: @ui-padding;
 	p {
 		text-align: center;
 		color: @theme-light;
-		padding-right: 25px;
 	}
 	.social-media {
 		display: inline;
-		margin-left: 25px;
+		margin-left: @ui-padding/2;
+		/* Icons */
 		a, a:hover, a:active, a:focus, a:visited {
 			color: @theme-light;
 			font-size: 18px;
@@ -273,6 +264,7 @@ Image Placement
 	z-index: 1 !important;
 }
 
+/* Text on images */
 .overlay {
 	text-align: right;
 	z-index: 100 !important;
@@ -339,9 +331,7 @@ Content-Specific
 }
 
 #join {
-	position: absolute;
-	top: @ui-padding;
-	right: @ui-padding;
+
 }
 
 
@@ -375,11 +365,10 @@ Content-Specific
 	margin-top: @ui-padding;
 }
 
-.announcement {
+.mailing-list {
 	color: @theme-color;
 	text-align: center;
-	padding: @ui-padding 0;
-	.announcement-email {
+	.email {
 		&:extend(.mono);
 		background: transparent;
 		border: none;
@@ -398,5 +387,18 @@ Content-Specific
 			border-color: @theme-color;
 			border-radius: 5px;
 		}
+	}
+}
+
+
+/*************
+Navbar
+*************/
+
+nav {
+	padding: @ui-padding;
+	button {
+		background: transparent;
+		border: none;
 	}
 }

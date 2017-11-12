@@ -1,0 +1,15 @@
+---
+layout: 'default'
+---
+
+<nav role="navigation">
+	<button type="button" data-target="#">
+		<i class="fa fa-2x fa-bars"></i>
+	</button>
+
+	<div id="join" class="pull-right">
+		<button class="btn btn-primary btn-light">
+			Join Now
+		</button>
+	</div>
+</nav>
