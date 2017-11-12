@@ -375,3 +375,28 @@ Content-Specific
 	margin-top: @ui-padding;
 }
 
+.announcement {
+	color: @theme-color;
+	text-align: center;
+	padding: @ui-padding 0;
+	.announcement-email {
+		&:extend(.mono);
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid @theme-dark;
+		width: 350px;
+		margin: 0 10px;
+		&:active {
+			border-color: @theme-color;
+			border-radius: 5px;
+		}
+	}
+	button {
+		background: transparent;
+		border: none;
+		&:active {
+			border-color: @theme-color;
+			border-radius: 5px;
+		}
+	}
+}
