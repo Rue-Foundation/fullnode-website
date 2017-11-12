@@ -3,13 +3,125 @@ layout: 'default'
 ---
 
 <nav role="navigation">
-	<button type="button" data-target="#">
-		<i class="fa fa-2x fa-bars"></i>
-	</button>
-
-	<div id="join" class="pull-right">
-		<button class="btn btn-primary btn-light">
-			Join Now
-		</button>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<button href="/">
+					<i class="fa fa-2x fa-bars"></i>
+				</button>
+			</div>
+			<div class="col-lg-4">
+				<img id="logo" src="/images/logo.png">
+			</div>
+			<div class="col-lg-4">
+				<div class="pull-right">
+					<a class="btn btn-primary btn-light" href="/join">
+						Join Now
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </nav>
+
+<section id="join" class="light">
+	<div class="container">
+		<div class="row">
+			<div id="description" class="col-lg-4 col-lg-offset-1 col-sm-12">
+				<h1>
+					Join the<br>
+					tribe.
+				</h1>
+
+				<p>Meet like-minded people building a decentralized future, learn from each other, and grow together. Whether you're a seasoned blockchain enthusiast or new to the space—follow our curated events program, run your own events, and be part of our community.</p>
+
+				<a class="btn btn-primary btn-light" href="mailto:info@fullnode.berlin">
+					Drop Us a Line
+				</a>
+			</div>
+			<div class="col-lg-4 col-sm-12">
+				<div class="input-group">
+					<input type="text" placeholder="First name*" aria-describedby="first-name" required>
+					<input type="text" placeholder="Last name*" aria-describedby="last-name" required>
+					<input type="email" placeholder="Email*" aria-describedby="email" required>
+					<input type="phone" placeholder="Phone*" aria-describedby="phone" required>
+					<div class="question">
+						I identify my gender as:
+					</div>
+					<div class="answer">
+						<input class="radio" type="radio" id="female"
+						name="gender">
+						<label for="female">Female</label>
+
+						
+						<input class="radio" type="radio" id="male"
+						name="gender">
+						<label for="male">Male</label>
+
+						<input class="radio" type="radio" id="transgender"
+						name="gender">
+						<label for="transgender">Transgender</label>
+
+						<br>
+
+						<input class="radio" type="radio" id="other"
+						name="gender">
+						<label for="other">Other</label>
+
+						<input class="radio" type="radio" id="none"
+						name="gender">
+						<label for="none">Prefer not to disclose</label>
+
+					</div>
+					<input type="text" placeholder="Company name" aria-describedby="company-name">
+
+					<input type="url" placeholder="Website" aria-describedby="website">
+
+					<div class="question">
+						I am interested in: 
+					</div>
+					<div class="answer">
+						<input class="radio" type="radio" id="private-office"
+						name="desk-type">
+						<label for="private-office">Private Office</label>
+						
+						<input class="radio" type="radio" id="fixed-desk"
+						name="desk-type">
+						<label for="fixed-desk">Fixed Desk</label>
+
+						<br>
+
+						<input class="radio" type="radio" id="flex-desk"
+						name="desk-type">
+						<label for="flex-desk">Flex Desk</label>
+					</div>
+
+					<input type="url" placeholder="LinkedIn Profile URL" aria-describedby="linked-in">
+
+					<input type="phone" placeholder="Do you know any Full Node members&#8212;who?" aria-describedby="do-you-know-anyone-at-fullnode">
+
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-12">
+
+				<input type="text" placeholder="How did you hear about us?" aria-describedby="referral">
+
+				<textarea placeholder="Tell us a little about you and your project:"></textarea>
+
+				<p class="required">
+					*Required information
+				</p>
+
+				<div class="join-now">
+					<input class="checkbox" type="checkbox" id="sign-up">
+
+					<label for="sign-up">Get the latest updates from us</label>
+
+					<button class="btn btn-primary btn-light active">
+						Join Now
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

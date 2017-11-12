@@ -89,11 +89,15 @@ section.section-small {
 }
 
 section.landing {
-    background: url(/images/header_canvas.jpg) no-repeat center center;
+    background: url(/images/header_canvas.jpg) no-repeat center center fixed;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;
+    padding: 0;
+    #logo {
+    	height: 100px;
+    }
 }
 
 section.light {
@@ -127,8 +131,8 @@ section.dark {
 }
 
 .row {
-	margin: 0 auto;
-	padding: @ui-padding;
+	margin: 0 @ui-padding;
+	padding: @ui-padding 0;
 }
 
 .table-row {
@@ -181,6 +185,10 @@ section.dark {
 footer {
 	background: @theme-dark;
 	padding: @ui-padding;
+	a, a:hover, a:active, a:focus, a:visited {
+		color: @theme-light;
+		text-decoration: none;
+	}
 	p {
 		text-align: center;
 		color: @theme-light;
@@ -197,9 +205,31 @@ footer {
 		}
 	}
 }
+
 /****************
 Components
 ****************/
+
+nav {
+	a {
+		color: @theme-dark;
+		text-decoration: none;
+	}
+	.row {
+		border-bottom: 1px solid @theme-dark;
+	}
+}
+
+button {
+	background: transparent;
+	border: none;
+}
+
+button.active {
+	background: @theme-color !important;
+	border-color: @theme-color !important;
+	border-bottom: none;
+}
 
 .btn-primary {
 	background: transparent;
@@ -213,9 +243,9 @@ Components
 	border-bottom-right-radius: 0;
 	border-bottom: none;
 	width: 150px;
-	margin-right: @ui-padding;
 	&:hover, &:active, &:focus {
 		background: @theme-color;
+		color: @theme-light;
 		border-color: @theme-color;
 	}
 }
@@ -323,15 +353,18 @@ Image Placement
 Content-Specific
 ****************/
 
-#logo {
-	width: 100%;
-	max-width: 200px;
-	display: block;
-	margin: 0 auto;
+.call-to-action {
+	padding-top: @ui-padding;
+	a {
+		margin-right: @ui-padding;
+	}
 }
 
-#join {
-
+#logo {
+	height: 60px;
+	margin-top: -10px !important;
+	display: block;
+	margin: 0 auto;
 }
 
 
@@ -339,17 +372,12 @@ Content-Specific
 	p {
 		margin: @ui-padding 0;
 	}
-	button {
-		min-width: @ui-padding;
-		margin-top: @ui-padding;
-	}
 	img {
 		z-index: 1 !important;
 	}
 	.container {
 		height: 100%;
 	}
-
 }
 
 #laptops {
@@ -392,13 +420,90 @@ Content-Specific
 
 
 /*************
-Navbar
+Join Form
 *************/
 
-nav {
-	padding: @ui-padding;
-	button {
+#join {
+	a {
+		position: absolute;
+		bottom: 25px;
+	}
+	.row {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
+		flex-wrap: wrap;
+	}
+	.row > [class*='col-'] {
+		display: flex;
+		flex-direction: column;
+	}
+	input {
+		&:extend(.mono);
 		background: transparent;
+		width: 100%;
+		text-transform: uppercase;
+		padding: 0 5px;
+		padding-top: 5px;
+		margin-bottom: 25px;
 		border: none;
+		border-bottom: 1px solid @theme-dark;
+		&:active {
+			border-color: @theme-color;
+			border-radius: 5px;
+		}
+	}
+	label {
+		&:extend(p);
+		font-weight: 400;
+		font-size: 13px;
+		margin-right: 8px;
+	}
+	.radio {
+		display: inline;
+		width: auto;
+		margin-bottom: 0px;
+		margin-right: 3px;
+	}
+	.checkbox {
+		display: inline;
+		width: auto;
+		margin-right: 3px;
+	}
+	.question {
+		&:extend(p);
+		font-size: 13px;
+		display: inline-block;
+		width: 40%;
+		vertical-align: top;
+	}
+	.answer {
+		font-size: 13px;
+		display: inline-block;
+		width: 60%;
+		margin-bottom: 15px;
+	}
+	textarea {
+		&:extend(.mono);
+		background-color: transparent;
+		height: 300px;
+		border: 1px solid @theme-dark;
+		width: 100%;
+	}
+	.required {
+		font-size: 13px;
+	}
+	.join-now {
+		position: absolute;
+		bottom: 25px;
+		padding-top: @ui-padding;
+		label {
+			font-size: 16px;
+		}
+	}
+	.drop-line {
+		position: absolute;
+		bottom: 0;
 	}
 }
