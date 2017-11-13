@@ -14,7 +14,7 @@ layout: 'default'
 				<img id="logo" src="/images/logo.png">
 			</div>
 			<div class="col-lg-4">
-				<div class="pull-right">
+				<div class="pull-right hidden-xs">
 					<a class="btn btn-primary btn-light" href="/join">
 						Join Now
 					</a>
@@ -27,7 +27,7 @@ layout: 'default'
 <section id="join" class="light">
 	<div class="container">
 		<div class="row">
-			<div id="description" class="col-lg-4 col-lg-offset-1 col-sm-12">
+			<div id="description" class="col-lg-3 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 				<h1>
 					Join the<br>
 					tribe.
@@ -35,11 +35,11 @@ layout: 'default'
 
 				<p>Meet like-minded people building a decentralized future, learn from each other, and grow together. Whether you're a seasoned blockchain enthusiast or new to the space—follow our curated events program, run your own events, and be part of our community.</p>
 
-				<a class="btn btn-primary btn-light" href="mailto:info@fullnode.berlin">
+				<a class="btn btn-primary btn-light drop-line" href="mailto:info@fullnode.berlin">
 					Drop Us a Line
 				</a>
 			</div>
-			<div class="col-lg-4 col-sm-12">
+			<div class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 				<div class="input-group">
 					<input type="text" placeholder="First name*" aria-describedby="first-name" required>
 					<input type="text" placeholder="Last name*" aria-describedby="last-name" required>
@@ -80,6 +80,7 @@ layout: 'default'
 					<div class="question">
 						I am interested in: 
 					</div>
+
 					<div class="answer">
 						<input class="radio" type="radio" id="private-office"
 						name="desk-type">
@@ -102,7 +103,7 @@ layout: 'default'
 
 				</div>
 			</div>
-			<div class="col-lg-3 col-sm-12">
+			<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 
 				<input type="text" placeholder="How did you hear about us?" aria-describedby="referral">
 

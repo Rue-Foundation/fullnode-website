@@ -113,7 +113,7 @@ section.section-small {
 }
 
 section.landing {
-    background: url(/images/header_canvas.jpg) no-repeat top center center fixed;
+    background: url(/images/header_canvas.jpg) no-repeat center center fixed;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
@@ -265,8 +265,12 @@ button.active {
 		color: @theme-light;
 		border-color: @theme-color;
 	}
+	.small-viewport({
+		font-size: 12px;
+		width: auto;
+	});
 }
-
+	
 hr {
 	border-color: @theme-dark;
 }
@@ -298,8 +302,7 @@ Image Placement
 	margin-left: @container-inverse-padding;
 	z-index: 1 !important;
 	.small-viewport({
-		margin-left: -30px;
-		margin-right: -30px;
+		display: none;
 	});
 }
 
@@ -307,6 +310,9 @@ Image Placement
 .overlay {
 	text-align: right;
 	z-index: 100 !important;
+	.small-viewport({
+		display: none;
+	});
 }
 
 .blue-block {
@@ -316,6 +322,9 @@ Image Placement
 		color: @theme-light;
 	}
 	height: 250px;
+	.small-viewport({
+		display: none;
+	});
 }
 
 .rounded-right {
@@ -379,7 +388,7 @@ Content-Specific
 		padding-top: @ui-padding-sm;
 		a {
 			margin-top: @ui-padding-sm;
-			margin-right: 0;
+			margin-right: @ui-padding-sm;
 		}
 	});
 }
@@ -555,12 +564,21 @@ Join Form
 		display: inline-block;
 		width: 40%;
 		vertical-align: top;
+		.small-viewport({
+			display: block;
+			width: 100%;
+			margin-bottom: @ui-padding-sm;
+		});
 	}
 	.answer {
 		font-size: 13px;
 		display: inline-block;
 		width: 60%;
 		margin-bottom: 15px;
+		.small-viewport({
+			display: block;
+			width: 100%;
+		});
 	}
 	textarea {
 		&:extend(.mono);
@@ -578,10 +596,21 @@ Join Form
 		padding-top: @ui-padding;
 		label {
 			font-size: 16px;
+			.small-viewport({
+				font-size: 14px;
+			});
 		}
+		.small-viewport({
+			position: relative;
+		});
 	}
 	.drop-line {
 		position: absolute;
-		bottom: 0;
+		bottom: 25px;
+		.small-viewport({
+			position: relative;
+			width: auto;
+			margin-bottom: 25px;
+		});
 	}
 }
