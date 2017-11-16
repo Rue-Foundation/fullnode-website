@@ -151,6 +151,9 @@ section.dark {
 		margin: 25px auto;
 		width: 100%;
 		max-height: 60px;
+		.small-viewport({
+			max-height: 40px;
+		});
 	}
 	h1,h2,h3,h4,h5,h6 {
 		text-align: center;
@@ -159,6 +162,9 @@ section.dark {
 		display: block;
 		margin: 0 auto;
 		width: 75%;
+		.small-viewport({
+			font-size: 16px;
+		});
 	}
 }
 
@@ -490,11 +496,14 @@ Content-Specific
 		border-bottom: 1px solid @theme-dark;
 		width: 350px;
 		max-width: 80%;
-		margin: 0 10px;
+		margin: 10px;
 		&:active {
 			border-color: @theme-color;
 			border-radius: 5px;
 		}
+		.small-viewport({
+			text-align: center;
+		});
 	}
 	button {
 		background: transparent;
@@ -611,8 +620,14 @@ Join Form
 		.small-viewport({
 			position: relative;
 			width: auto;
+			bottom: auto;
 			margin-bottom: 25px;
 		});
+	}
+	#description {
+		.small-viewport({
+			margin-bottom: @ui-padding;
+		});		
 	}
 }
 
@@ -641,7 +656,7 @@ Modal menu
 		display: block;
 		margin: @ui-padding*2 auto;
 		.small-viewport({
-			margin: @ui-padding;
+			margin: @ui-padding auto;
 		});
 	}
     #logo {
