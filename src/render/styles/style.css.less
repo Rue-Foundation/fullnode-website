@@ -3,7 +3,8 @@
 @theme-base: #ffffff;
 @theme-color: #007dfd;
 @theme-dark: #1a1a1a;
-@theme-light: #f2f2f2;
+@theme-light: #f9f9f9; // #f2f2f2;
+
 
 @ui-padding: 50px;
 @ui-padding-sm: 15px;
@@ -443,8 +444,8 @@ Content-Specific
 	display: block;
 	margin: 0 auto;
 	.small-viewport({
-		margin-top: 0;
-		height: 20px;
+		margin-top: 30px !important;
+		height: 45px;
 	});
 }
 
@@ -613,4 +614,78 @@ Join Form
 			margin-bottom: 25px;
 		});
 	}
+}
+
+/***************
+Modal menu
+***************/
+
+#modal-menu {
+	background-color: @theme-dark;
+	color: @theme-light;
+	
+	margin: 0;
+	padding: 0;
+	.modal-dialog, .modal-content {
+		background-color: @theme-dark;
+		color: @theme-light;
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+	}
+	.menu-items {
+		text-align: center;
+		width: 60%;
+		display: block;
+		margin: @ui-padding*2 auto;
+		.small-viewport({
+			margin: @ui-padding;
+		});
+	}
+    #logo {
+    	height: 100px;
+		.small-viewport({
+			margin-top: 50px !important;
+			height: auto;
+			width: 95px;
+			margin-left: -15px;
+			margin-right: -15px;
+		});
+    }
+    .join-button {
+    	border-color: @theme-light;
+    	color: @theme-light;
+    	&:hover {
+    		border-color: @theme-color;
+    	}
+    }
+    a {
+    	&:extend(.mono);
+    	color: @theme-light;
+    	text-align: center;
+    	&:hover, &:active, &:focus, &:visited {
+    		text-decoration: none;
+    		color: @theme-light;
+    	}
+    }
+
+    hr {
+    	margin-bottom: @ui-padding;
+    	border-color: @theme-light;
+    }
+}
+
+.fa-times-thin:before {
+	content: '\00d7';
+	font-size: 54px;
+	.small-viewport({
+		font-size: 26px;
+		margin-top: -50px !important;
+	});
+}
+
+.join-text {
+	padding-top: 8px;
 }

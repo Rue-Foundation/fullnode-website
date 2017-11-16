@@ -2,15 +2,12 @@
 layout: 'default'
 ---
 
-<nav role="navigation">
-
-</nav>
 
 <section class="landing">
 	<div class="navigation container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-				<button href="/">
+				<button data-toggle="modal" data-target="#modal-menu">
 					<i class="fa fa-2x fa-bars"></i>
 				</button>
 			</div>
@@ -22,9 +19,11 @@ layout: 'default'
 					<a class="hidden-xs btn btn-primary btn-light join-button" href="/join">
 						Join Now
 					</a>
-					<a class="hidden-lg hidden-md hidden-sm mono" href="/join">
-						Join
-					</a>
+					<div class="join-text">
+						<a class="hidden-lg hidden-md hidden-sm mono" href="/join">
+							Join
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -56,17 +55,17 @@ layout: 'default'
 <nav role="navigation">
 	<div class="container hidden-xs">
 		<div class="row">
-			<div class="col-lg-4">
-				<button type="button" data-target="#">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<button type="button" data-toggle="modal" data-target="#modal-menu">
 					<i class="fa fa-2x fa-bars"></i>
 				</button>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 				<img id="logo" src="/images/logo.png">
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 				<div class="pull-right">
-					<a class="btn btn-primary btn-light" href="/join">
+					<a class="btn btn-primary btn-light" data-toggle="modal" data-target="#modal-menu">
 						Join Now
 					</a>
 				</div>
