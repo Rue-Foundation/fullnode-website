@@ -31,6 +31,7 @@ layout: 'default'
 
 <section id="join" class="light">
 	<div class="container">
+		<form id="join-form">
 		<div class="row">
 			<div id="description" class="col-lg-3 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 				<h1>
@@ -46,41 +47,40 @@ layout: 'default'
 			</div>
 			<div class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 				<div class="input-group">
-					<input type="text" placeholder="First name*" aria-describedby="first-name" required>
-					<input type="text" placeholder="Last name*" aria-describedby="last-name" required>
-					<input type="email" placeholder="Email*" aria-describedby="email" required>
-					<input type="phone" placeholder="Phone*" aria-describedby="phone" required>
+					<input type="text" name="first_name" placeholder="First name*" aria-describedby="first-name" required>
+					<input type="text" name="last_name" placeholder="Last name*" aria-describedby="last-name" required>
+					<input type="email" name="email" placeholder="Email*" aria-describedby="email" required>
+					<input type="phone" name="phone" placeholder="Phone*" aria-describedby="phone" required>
 					<div class="question">
 						I identify my gender as:
 					</div>
 					<div class="answer">
 						<input class="radio" type="radio" id="female"
-						name="gender">
+						name="gender" value="female">
 						<label for="female">Female</label>
 
-						
 						<input class="radio" type="radio" id="male"
-						name="gender">
+						name="gender" value="female">
 						<label for="male">Male</label>
 
-						<input class="radio" type="radio" id="transgender"
-						name="gender">
-						<label for="transgender">Transgender</label>
+						<input class="radio" type="radio" id="trans"
+						name="gender" value="trans">
+						<label for="transgender">Trans</label>
 
 						<br>
 
 						<input class="radio" type="radio" id="other"
-						name="gender">
+						name="gender" value="other">
 						<label for="other">Other</label>
 
-						<input class="radio" type="radio" id="none"
-						name="gender">
-						<label for="none">Prefer not to disclose</label>
+						<input class="radio" type="radio" id="prefer_not"
+						name="gender" value="prefer_not">
+						<label for="prefer_not">Prefer not to disclose</label>
 
 					</div>
-					<input type="text" placeholder="Company name" aria-describedby="company-name">
+					<input type="text" name="company" placeholder="Company name" aria-describedby="company-name">
 
-					<input type="url" placeholder="Website" aria-describedby="website">
+					<input type="url" name="website" placeholder="Website" aria-describedby="website">
 
 					<div class="question">
 						I am interested in: 
@@ -88,46 +88,47 @@ layout: 'default'
 
 					<div class="answer">
 						<input class="radio" type="radio" id="private-office"
-						name="desk-type">
+						name="desk_type" value="private_office">
 						<label for="private-office">Private Office</label>
 						
 						<input class="radio" type="radio" id="fixed-desk"
-						name="desk-type">
+						name="desk_type" value="fixed">
 						<label for="fixed-desk">Fixed Desk</label>
 
 						<br>
 
 						<input class="radio" type="radio" id="flex-desk"
-						name="desk-type">
+						name="desk_type" value="flex">
 						<label for="flex-desk">Flex Desk</label>
 					</div>
 
-					<input type="url" placeholder="LinkedIn Profile URL" aria-describedby="linked-in">
+					<input type="url" name="linkedin" placeholder="LinkedIn Profile URL" aria-describedby="linkedin">
 
-					<input type="phone" placeholder="Do you know any Full Node members&#8212;who?" aria-describedby="do-you-know-anyone-at-fullnode">
+					<input type="text" name="connections" placeholder="Do you know any Full Node members&#8212;who?" aria-describedby="do-you-know-anyone-at-fullnode">
 
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 
-				<input type="text" placeholder="How did you hear about us?" aria-describedby="referral">
+				<input type="text" name="how_you_heard" placeholder="How did you hear about us?" aria-describedby="referral">
 
-				<textarea placeholder="Tell us a little about you and your project:"></textarea>
+				<textarea name="project_desc" placeholder="Tell us a little about you and your project:"></textarea>
 
 				<p class="required">
 					*Required information
 				</p>
 
 				<div class="join-now">
-					<input class="checkbox" type="checkbox" id="sign-up">
+					<input class="checkbox" type="checkbox" id="mailing_list_sign_up" name="mailing_list_sign_up">
 
-					<label for="sign-up">Get the latest updates from us</label>
+					<label for="mailing_list_sign_up">Get the latest updates from us</label>
 
-					<button class="btn btn-primary btn-light active">
+					<button type="submit" id="join-form" class="btn btn-primary btn-light active">
 						Join Now
 					</button>
 				</div>
 			</div>
+		</form>
 		</div>
 	</div>
 </section>
