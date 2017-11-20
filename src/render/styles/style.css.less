@@ -105,7 +105,7 @@ section {
 	min-height: 100vh;
 	padding: @ui-padding 0;
 	.small-viewport({
-		padding: @ui-padding-sm 0;
+		padding: @ui-padding 0;
 	});
 }
 
@@ -227,6 +227,11 @@ footer {
 			text-decoration: none;
 			padding-right: 5px;
 		}
+		.small-viewport({
+			display: block;
+			margin-left: 0;
+			margin-top: @ui-padding-sm;
+		});
 	}
 }
 
@@ -329,9 +334,6 @@ Image Placement
 		color: @theme-light;
 	}
 	height: 250px;
-	.small-viewport({
-		display: none;
-	});
 }
 
 .rounded-right {
@@ -703,4 +705,29 @@ Modal menu
 
 .join-text {
 	padding-top: 8px;
+}
+
+/***************
+Mobile styles
+****************/
+
+.image-mobile {
+	display: none;
+	width: 100vw;
+	.small-viewport({
+		display: block;
+	});
+}
+
+.join-mobile {
+	display: none;
+	width: 100vw;
+	height: auto;
+	padding: @ui-padding/2;
+	padding-bottom: 75px;
+	border-bottom-right-radius: 35%;
+	border-bottom-left-radius: 35%;
+	.small-viewport({
+		display: block;
+	});
 }

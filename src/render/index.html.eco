@@ -12,7 +12,9 @@ layout: 'default'
 				</button>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-				<img id="logo" src="/images/logo.png">
+				<a href="/">
+					<img id="logo" src="/images/FN_Logo_RGB.svg">
+				</a>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 				<div class="pull-right">
@@ -61,7 +63,9 @@ layout: 'default'
 				</button>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-				<img id="logo" src="/images/logo.png">
+				<a href="/">
+					<img id="logo" src="/images/FN_Logo_RGB.svg">
+				</a>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 				<div class="pull-right">
@@ -103,6 +107,7 @@ layout: 'default'
 				<img class="image-bleed" src="/images/meetup_line.png">
 			</div>
 		</div>
+		<img class="image-mobile" src="/images/meetup_line.png">
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 				<img id="laptops" class="image-bleed" src="/images/laptops_line.png">
@@ -135,7 +140,7 @@ layout: 'default'
 	</div>
 </section>
 
-<section class="dark">
+<section class="dark section-small">
 	<div class="container">
 		<h2>
 			Amenities
@@ -166,7 +171,7 @@ layout: 'default'
 				</h4>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_5.svg">
 				<h4>
@@ -192,7 +197,7 @@ layout: 'default'
 				</h4>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_9.svg">
 				<h4>
@@ -218,7 +223,7 @@ layout: 'default'
 				</h4>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_13.svg">
 				<h4>
@@ -275,7 +280,19 @@ layout: 'default'
 			</div>
 		</div>
 
-		<div class="row parent-element">
+		<img class="image-mobile" src="/images/building_side.jpg">
+		<img class="image-mobile" src="/images/person_line_mobile.png">
+
+		<div class="join-mobile blue-block">
+			<h2>
+				Join the Tribe
+			</h2>
+			<p>
+				Meet like-minded people building a decentralized future, learn from each other, and grow together. Whether you're a seasoned blockchain enthusiast or new to the space—follow our curated events program, run your own events, and be part of our community.
+			</p>
+		</div>
+
+		<div class="row parent-element hidden-xs">
 			<img id="desk" class="child-element-2-3 hidden-sm" src="/images/desk_line.png">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<img id="building" class="image-bleed" src="/images/building_side.jpg">
@@ -289,7 +306,7 @@ layout: 'default'
 				<img class="image-bleed" src="/images/person_line.png">
 			</div>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
 				<div class="blue-block col-bleed-left">
 					<h2>
@@ -316,3 +333,4 @@ layout: 'default'
 		</div>
 	</div>
 </section>
+
