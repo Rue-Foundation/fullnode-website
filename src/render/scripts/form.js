@@ -12,3 +12,7 @@ $('#submit-form').on('click', function(e) {
     // do something
   );
 })
+
+$('.carousel').carousel({
+    interval: false
+}); 
