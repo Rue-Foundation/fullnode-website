@@ -69,7 +69,7 @@ layout: 'default'
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 				<div class="pull-right">
-					<a class="btn btn-primary btn-light" data-toggle="modal" data-target="#modal-menu">
+					<a class="btn btn-primary btn-light" href="/join">
 						Join Now
 					</a>
 				</div>
@@ -141,7 +141,7 @@ layout: 'default'
 </section>
 
 <section class="dark section-small">
-	<div class="container">
+	<div class="container hidden-xs">
 		<h2>
 			Amenities
 		</h2>
@@ -171,7 +171,7 @@ layout: 'default'
 				</h4>
 			</div>
 		</div>
-		<div class="row hidden-xs">
+		<div class="row">
 			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_5.svg">
 				<h4>
@@ -197,7 +197,7 @@ layout: 'default'
 				</h4>
 			</div>
 		</div>
-		<div class="row hidden-xs">
+		<div class="row">
 			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_9.svg">
 				<h4>
@@ -223,7 +223,7 @@ layout: 'default'
 				</h4>
 			</div>
 		</div>
-		<div class="row hidden-xs">
+		<div class="row">
 			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_13.svg">
 				<h4>
@@ -249,6 +249,149 @@ layout: 'default'
 				</h4>
 			</div>
 		</div>
+	</div>
+	<!--- Amenities Mobile View -->
+	<div class="carousel slide hidden-lg hidden-md hidden-sm" data-ride="carousel" id="myCarousel">
+		<h2>
+			Amenities
+		</h2>
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="row amenities">
+					<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_1.svg">
+						<h4>
+							24/7 Building Access
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_2.svg">
+						<h4>
+							Super Fast &#38; Secure Internet
+						</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_3.svg">
+						<h4>
+							COFFEE CIRCLE COFFEE
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_4.svg">
+						<h4>
+							BUSINESS-CLASS PRINTERS
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_5.svg">
+						<h4>
+							BLOCKCHAIN MEETUPS
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_6.svg">
+						<h4>
+							Unique hang-out areas
+						</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_7.svg">
+						<h4>
+							Mail &#38; Package Handling
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_8.svg">
+						<h4>
+							Locker Room
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_9.svg">
+						<h4>
+							Community Manager
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_10.svg">
+						<h4>
+							Office Supplies
+						</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_11.svg">
+						<h4>
+							Stocked coffee bar
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_12.svg">
+						<h4>
+							Multimedia event space 
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_13.svg">
+						<h4>
+							Private booths
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_14.svg">
+						<h4>
+							Audio box
+						</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_15.svg">
+						<h4>
+							Sleep box
+						</h4>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+						<img src="/images/icons/Element_16.svg">
+						<h4>
+							Flexible sub-scriptions 
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Left and right controls -->
+	<div class="slider-controls">
+		<a class="slider-control" data-slide="prev" href="#myCarousel">
+		 	<i class="fa fa-chevron-left"></i>
+		 	<span class="sr-only">Previous</span>
+		 </a>
+		 <span class="more mono">
+		 	More
+		 </span>
+		 <a class="slider-control" data-slide="next" href="#myCarousel">
+		 	<i class="fa fa-chevron-right"></i>
+		 	<span class="sr-only">Next</span>
+		 </a>
+	</div>
 </section>
 
 <section class="light">

@@ -166,6 +166,9 @@ section.dark {
 			font-size: 16px;
 		});
 	}
+	.small-viewport({
+		height: 100vh;
+	});
 }
 
 .container {
@@ -730,4 +733,36 @@ Mobile styles
 	.small-viewport({
 		display: block;
 	});
+}
+
+.slider-controls {
+	display: none;
+	margin: auto;
+	text-align: center;
+	i {
+		font-size: 36px;
+		-webkit-text-stroke: 6px @theme-dark;
+	}
+	a {
+		color: @theme-color;
+		text-decoration: none;
+		&:hover, &:active, &:focus, &:visited {
+			color: @theme-color;
+			text-decoration: none;
+		}
+	}
+	.small-viewport({
+		display: block;
+	});
+}
+
+.carousel-inner {
+	height: 400px;
+}
+
+.more {
+	margin: @ui-padding;
+	color: @theme-color;
+	position: relative;
+	top: -7px;
 }
