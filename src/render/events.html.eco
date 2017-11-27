@@ -1,0 +1,26 @@
+---
+layout: 'subpages'
+title: 'Events'
+---
+
+<section id="description" class="light section-small">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+				<h1>
+					Host your<br>
+					event at<br>
+					Full Node
+				</h1>
+				<p>Looking to host a meetup, workshop, or other event related to blockchain, decentralization, and cryptocurrencies? Full Node is the perfect place for that and provides you direct access to the community. </p>
+				<a class="btn btn-primary btn-light" href="mailto:info@fullnode.berlin">
+					Drop Us a Line
+				</a>
+			</div>
+			<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 overlay">
+				<img class="image-bleed" src="/images/meetup_line.png">
+			</div>
+		</div>
+		<img class="image-mobile" src="/images/meetup_line.png">
+	</div>
+</section>
