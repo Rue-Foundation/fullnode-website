@@ -47,6 +47,7 @@ layout: 'default'
 					Drop Us a Line
 				</a>
 			</div>
+
 			<div class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 				<div class="input-group">
 					<input type="text" name="first_name" placeholder="First name*" aria-describedby="first-name" required>
@@ -62,7 +63,7 @@ layout: 'default'
 						<label for="female">Female</label>
 
 						<input class="radio" type="radio" id="male"
-						name="gender" value="female">
+						name="gender" value="male">
 						<label for="male">Male</label>
 
 						<input class="radio" type="radio" id="trans"
@@ -125,7 +126,7 @@ layout: 'default'
 
 					<label for="mailing_list_sign_up">Get the latest updates from us</label>
 
-					<button type="submit" id="join-form" class="btn btn-primary btn-light active">
+					<button type="submit" id="submit-form" class="btn btn-primary btn-light active">
 						Join Now
 					</button>
 				</div>
