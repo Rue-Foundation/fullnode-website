@@ -11,10 +11,6 @@ jQuery.fn.serializeObject = function () {
 var $form = $('form#join-form'),
     url = 'https://script.google.com/macros/s/AKfycbzqGTEhx9uyFubEhy4atY_2a3BePE9Zv1yyymA1A0owavypTM73/exec'
 
-//     url = 'https://script.google.com/macros/u/1/s/AKfycbzqGTEhx9uyFubEhy4atY_2a3BePE9Zv1yyymA1A0owavypTM73/exec'
-
-// https://docs.google.com/AKfycbzqGTEhx9uyFubEhy4atY_2a3BePE9Zv1yyymA1A0owavypTM73/formResponse'; //'
-
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
@@ -27,8 +23,6 @@ $('#submit-form').on('click', function(e) {
     $form.reset();
   );
 })
-
-
 
 $('.carousel').carousel({
     interval: false
