@@ -4,7 +4,7 @@
 @theme-color: #007dfd;
 @theme-dark: #1a1a1a;
 @theme-light: #f9f9f9; // #f2f2f2;
-
+@theme-gray: #808080;
 
 @ui-padding: 50px;
 @ui-padding-sm: 15px;
@@ -24,12 +24,6 @@ body,html {
 Typography
 ****************/
 
-@font-face {
-    font-family: 'apercubold';
-    src: url('/fonts/apercu_bold-webfont.woff2') format('woff2'), url('/fonts/apercu_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
     font-family: 'apercumedium';
     src: url('/fonts/apercu_medium-webfont.woff2') format('woff2'), url('/fonts/apercu_medium-webfont.woff') format('woff');
@@ -84,6 +78,7 @@ p {
 		font-size: 14px;
 	});
 }
+
 a.mono {
 	color: @theme-dark;
 	text-decoration: none;
@@ -104,9 +99,6 @@ section {
 	width: 100%;
 	min-height: 100vh;
 	padding: @ui-padding 0;
-	.small-viewport({
-		padding: @ui-padding 0;
-	});
 }
 
 section.section-small {
@@ -168,6 +160,11 @@ section.dark {
 	}
 	.small-viewport({
 		height: 100vh;
+		#subscriptions {
+			h4 {
+				width: 100%;
+			}
+		}
 	});
 }
 
@@ -831,4 +828,71 @@ Mobile styles
 	text-align: center !important;
 	.mono {
 	}
+}
+
+.memberships {
+	.title {
+		padding-bottom: 0;
+	}
+	.plan {
+		padding: 0;
+		padding-bottom: @ui-padding-sm;
+		border: 3px solid @theme-gray;
+		h3 {
+			background: @theme-gray;
+			color: @theme-light;
+			padding: @ui-padding-sm;
+			text-transform: capitalize;
+			margin: 0;
+		}
+		img {
+			width: 100%;
+		}
+		p {
+			padding: @ui-padding-sm;
+			padding-left: @ui-padding-sm*2;
+			padding-right: @ui-padding-sm*2;
+			font-size: 14px;
+			color: #808080;
+		}
+		.row {
+			padding: 0;
+			margin: 0;
+		}
+		.at-a-glance {
+			margin-top: 25px;
+			p {
+				padding: 0;
+			}
+			.best-for {
+				padding: 0 @ui-padding-sm;
+				border-right: 1px solid @theme-gray;
+			}
+		}
+		button {
+			position: absolute;
+			background: @theme-light;
+			bottom: -30px;
+			border: 3px solid @theme-gray;
+			border-top: none;
+			border-radius: 0;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			width: 43%;
+			padding: 5px 0;
+		}
+		#more {
+			color: @theme-gray;
+			left: 5%;
+		}
+		#request {
+			background: @theme-gray;
+			color: @theme-light;
+			right: 5%;
+		}
+	}
+}
+
+.desk-description {
+	display: none;
 }

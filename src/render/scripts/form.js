@@ -27,3 +27,8 @@ $('#submit-form').on('click', function(e) {
 $('.carousel').carousel({
     interval: false
 }); 
+
+$('button').click(function() {
+  console.log('hello');
+  $(this).closest("desk-description").toggle();
+}
