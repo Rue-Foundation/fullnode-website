@@ -23,17 +23,16 @@ docpadConfig = {
 
 			# The website description (for SEO)
 			description: """
-				
-				
+				Full Node is the backbone of your network—a workspace where you can learn, work, and grow together with other blockchain companies on your mission to build the future. 
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				
+				blockchain, full node, ethereum, cosmos, co-working, berlin, gnosis, ethereum, bitcoin, hub, workspace
 				"""
 
 			# The website author's name
-			author: "Full Node"
+			author: "FULL NODE"
 
 			# The website author's email
 			email: "info@fullnode.berlin"

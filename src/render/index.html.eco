@@ -39,7 +39,7 @@ layout: 'default'
 				</div>
 				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 hidden-xs">
 					<p>
-						Full Node is the backbone of your network—a workspace where you can learn, work, and grow together with other Blockchain companies on your mission to build the future. 
+						Full Node is the backbone of your network—a workspace where you can learn, work, and grow together with other blockchain companies on your mission to build the future. 
 					</p>
 				</div>
 			</div>
@@ -95,7 +95,7 @@ layout: 'default'
 					Central
 				</h1>
 				<p>
-					In the Blockchain community, we believe that information should be shared, continually reconciled, and truly public. This is also how we imagine a perfect place to work: a space without hierarchy, a space which lets everyone easily connect with each other to share information and exchange ideas. 
+					In the blockchain community, we believe that information should be shared, continually reconciled, and truly public. This is also how we imagine a perfect place to work: a space without hierarchy, a space which lets everyone easily connect with each other to share information and exchange ideas. 
 				</p>
 				<div class="call-to-action">
 					<a class="btn btn-primary btn-light" href="mailto:info@fullnode.berlin">
@@ -228,7 +228,7 @@ layout: 'default'
 			<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 				<img src="/images/icons/Element_5.svg">
 				<h4>
-					BLOCKCHAIN MEETUPS
+					blockchain MEETUPS
 				</h4>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
@@ -344,7 +344,7 @@ layout: 'default'
 					<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
 						<img src="/images/icons/Element_5.svg">
 						<h4>
-							BLOCKCHAIN MEETUPS
+							blockchain MEETUPS
 						</h4>
 					</div>
 					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
