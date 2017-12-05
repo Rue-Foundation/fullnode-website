@@ -714,6 +714,61 @@ Modal menu
 	padding-top: 8px;
 }
 
+.dark {
+	background-color: @theme-dark;
+}
+
+.impressum {
+	background-color: @theme-dark;
+	color: @theme-light;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	hr {
+		border-color: @theme-light;
+	}
+	p {
+		color: @theme-light;
+	}
+    #logo {
+    	height: 100px;
+		.small-viewport({
+			margin-top: 50px !important;
+			height: auto;
+			width: 95px;
+			margin-left: -15px;
+			margin-right: -15px;
+		});
+    }
+    .join-button {
+    	border-color: @theme-light;
+    	color: @theme-light;
+    	&:hover {
+    		border-color: @theme-color;
+    	}
+    }
+    a {
+    	&:extend(.mono);
+    	color: @theme-light;
+    	text-align: center;
+    	&:hover, &:active, &:focus, &:visited {
+    		text-decoration: none;
+    		color: @theme-light;
+    	}
+    }
+    hr {
+    	margin-bottom: @ui-padding;
+    	border-color: @theme-light;
+    }
+    i {
+    	color: @theme-light;
+    }
+    .row {
+    	margin-top: @ui-padding-sm;
+    	margin-bottom: @ui-padding-sm;
+    }
+}
+
 /***************
 Mobile styles
 ****************/
