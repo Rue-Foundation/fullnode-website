@@ -837,6 +837,9 @@ Mobile styles
 			margin-top: -1px;
 		});		
 	}
+	.row {
+		padding-top: 0 !important;
+	}
 	.plan {
 		padding: 0;
 		padding-bottom: @ui-padding-sm;
@@ -859,6 +862,13 @@ Mobile styles
 			padding-right: @ui-padding-sm*2;
 			font-size: 14px;
 			color: #808080;
+		}
+		a {
+			text-align: center;
+			cursor: pointer;
+		}
+		a:hover, a:active, a:focus, a:visited {
+			text-decoration: none;
 		}
 		.row {
 			padding: 0;
@@ -883,7 +893,7 @@ Mobile styles
 				});				
 			}
 		}
-		button {
+		.btn-primary {
 			position: absolute;
 			background: @theme-light;
 			bottom: -30px;
@@ -898,18 +908,20 @@ Mobile styles
 				bottom: -26px;
 			});	
 		}
-		button:active {
+		.btn-primary:active {
 			background: @theme-light;
 			border-color: @theme-color;
 		}
-		.button-more {
+		.button-more  {
 			color: @theme-gray;
 			left: 5%;
 		}
-		.request {
+		.request, .request:active, .request:focus, .request:visited {
 			background: @theme-gray;
 			color: @theme-light;
 			right: 5%;
+			border: 3px solid @theme-gray;
+			border-top: none;
 		}
 	}
 }
@@ -925,11 +937,14 @@ Mobile styles
 			background: @theme-color;
 			color: @theme-light;
 		}
-		button {
+		.btn-primary {
 			background: @theme-light;
 			border: 3px solid @theme-color;
 			border-top: none;
 
+		}
+		p {
+			color: @theme-dark;
 		}
 		.button-more {
 			color: @theme-color;
@@ -940,7 +955,7 @@ Mobile styles
 	}
 }
 
-button:focus {
+.btn-primary:focus, button:focus {
   outline: none !important;
 }
 

@@ -38,12 +38,12 @@ title: 'Membership'
 					<p class="desk-description">
 						Our lockable, private offices surrounded by glass walls can accommodate teams of 2, 4, or 6 people. They are fully furnished and include personal desks, ergonomic chairs, cabinets, whiteboards, and more. That of course all comes on top of a 24/7 access to beautifully designed meeting rooms, private phone booths, a fully stocked coffee bar, secure and super fast WiFi, and more amenities for your work space to bring out the most productive and creative you.
 					</p>
-					<button class="btn-primary button-more">
+					<a class="btn-primary button-more">
 						MORE
-					</button>
-					<button class="btn-primary request">
+					</a>
+					<a class="btn-primary request" href="/join">
 						REQUEST NOW
-					</button>
+					</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -70,12 +70,12 @@ title: 'Membership'
 						<p class="desk-description">
 							Join crypto-enthusiasts, entrepreneurs, blockchain startups, and freelancers in the Full Node open co-working area. With a fixed desk, you'll start the day in the same spot every day. Each open space membership comes with meeting rooms, utilities, a fully stocked coffee bar, prints and scans, 24/7 access, and more. 
 						</p>
-						<button class="btn-primary button-more">
+						<a class="btn-primary button-more">
 							MORE
-						</button>
-						<button class="btn-primary request">
+						</a>
+						<a href="/join" class="btn-primary request">
 							REQUEST NOW
-						</button>
+						</a>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -102,12 +102,12 @@ title: 'Membership'
 						<p class="desk-description">
 							You like flexibility? We totally get it. With our flexible desk plan, you come as you go—just choose an open seat in our co-working area, enjoy all amenities, and be part of our community. 
 						</p>
-						<button class="btn-primary button-more">
+						<a class="btn-primary button-more">
 							MORE
-						</button>
-						<button class="btn-primary request" href="/join">
+						</a>
+						<a class="btn-primary request" href="/join">
 							REQUEST NOW
-						</button>
+						</a>
 				</div>
 			</div>
 		</div>
