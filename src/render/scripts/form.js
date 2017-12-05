@@ -9,7 +9,8 @@ jQuery.fn.serializeObject = function () {
 };
 
 var $form = $('form#join-form'),
-    url = 'https://script.google.com/macros/s/AKfycbzqGTEhx9uyFubEhy4atY_2a3BePE9Zv1yyymA1A0owavypTM73/exec'
+    url = 'https://script.google.com/macros/s/AKfycbzqGTEhx9uyFubEhy4atY_2a3BePE9Zv1yyymA1A0owavypTM73/exec';
+
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
@@ -17,18 +18,17 @@ $('#submit-form').on('click', function(e) {
     url: url,
     method: "GET",
     dataType: "json",
-    data: $form.serializeObject()
+    data: $form.serializeObject(),
   }).success(
-    // do something
-    $form.reset();
+    $form.reset()
   );
-})
+});
 
 $('.carousel').carousel({
     interval: false
 }); 
 
-$('button').click(function() {
-  console.log('hello');
-  $(this).closest("desk-description").toggle();
-}
+$( "#more" ).click(function() {
+    $(this).parent().find(".desk-description").toggle();
+    console.log($(this));
+});
