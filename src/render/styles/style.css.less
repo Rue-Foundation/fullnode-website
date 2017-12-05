@@ -833,11 +833,15 @@ Mobile styles
 .memberships {
 	.title {
 		padding-bottom: 0;
+		.small-viewport({
+			margin-top: -1px;
+		});		
 	}
 	.plan {
 		padding: 0;
 		padding-bottom: @ui-padding-sm;
 		border: 3px solid @theme-gray;
+		margin-top: @ui-padding;
 		h3 {
 			background: @theme-gray;
 			color: @theme-light;
@@ -847,6 +851,7 @@ Mobile styles
 		}
 		img {
 			width: 100%;
+			margin-top: -1px;
 		}
 		p {
 			padding: @ui-padding-sm;
@@ -867,6 +872,15 @@ Mobile styles
 			.best-for {
 				padding: 0 @ui-padding-sm;
 				border-right: 1px solid @theme-gray;
+				.small-viewport({
+					border: none;
+					padding-bottom: 0;
+				});
+			}
+			.cost {
+				.small-viewport({
+					padding-left: @ui-padding-sm;
+				});				
 			}
 		}
 		button {
@@ -880,12 +894,19 @@ Mobile styles
 			border-bottom-left-radius: 10px;
 			width: 43%;
 			padding: 5px 0;
+			.small-viewport({
+				bottom: -26px;
+			});	
 		}
-		#more {
+		button:active {
+			background: @theme-light;
+			border-color: @theme-color;
+		}
+		.button-more {
 			color: @theme-gray;
 			left: 5%;
 		}
-		#request {
+		.request {
 			background: @theme-gray;
 			color: @theme-light;
 			right: 5%;
@@ -896,3 +917,30 @@ Mobile styles
 .desk-description {
 	display: none;
 }
+
+.memberships {
+	.active {
+		border: 3px solid @theme-color;
+		h3 {
+			background: @theme-color;
+			color: @theme-light;
+		}
+		button {
+			background: @theme-light;
+			border: 3px solid @theme-color;
+			border-top: none;
+
+		}
+		.button-more {
+			color: @theme-color;
+		}
+		.request {
+			background: @theme-color;
+		}
+	}
+}
+
+button:focus {
+  outline: none !important;
+}
+

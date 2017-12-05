@@ -16,9 +16,9 @@ title: 'Membership'
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="plan">
 					<h3>
-						Fixed Desk
+						Private Office
 					</h3>
-					<img src="/images/person_line.png">
+					<img src="/images/office.jpg">
 					<div class="row at-a-glance">
 						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 							<p class="best-for">
@@ -29,7 +29,7 @@ title: 'Membership'
 							</p>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<p>
+							<p class="cost">
 								<strong>Starting at:</strong><br>
 								 2000€/month
 							</p>
@@ -38,10 +38,10 @@ title: 'Membership'
 					<p class="desk-description">
 						Our lockable, private offices surrounded by glass walls can accommodate teams of 2, 4, or 6 people. They are fully furnished and include personal desks, ergonomic chairs, cabinets, whiteboards, and more. That of course all comes on top of a 24/7 access to beautifully designed meeting rooms, private phone booths, a fully stocked coffee bar, secure and super fast WiFi, and more amenities for your work space to bring out the most productive and creative you.
 					</p>
-					<button id="more" class="btn-primary">
+					<button class="btn-primary button-more">
 						MORE
 					</button>
-					<button id="request" class="btn-primary">
+					<button class="btn-primary request">
 						REQUEST NOW
 					</button>
 				</div>
@@ -51,30 +51,29 @@ title: 'Membership'
 					<h3>
 						Fixed Desk
 					</h3>
-					<img src="/images/person_line.png">
+					<img src="/images/fixed.jpg">
 						<div class="row at-a-glance">
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 								<p class="best-for">
 									<strong>Best for:</strong><br>
-									- Established teams of 2-6 people<br>
-									- Autonomy within community<br>
-									- Team collaboration and focus<br>
+									- Collaboration, growth, and networking<br>
+									- Startups and freelancers<br>
+									- Everyday use<br>
 								</p>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<p>
-									<strong>Starting at:</strong><br>
-									 2000€/month
+								<p class="cost">
+									 490€/month
 								</p>
 							</div>
 						</div>
 						<p class="desk-description">
-							Our lockable, private offices surrounded by glass walls can accommodate teams of 2, 4, or 6 people. They are fully furnished and include personal desks, ergonomic chairs, cabinets, whiteboards, and more. That of course all comes on top of a 24/7 access to beautifully designed meeting rooms, private phone booths, a fully stocked coffee bar, secure and super fast WiFi, and more amenities for your work space to bring out the most productive and creative you.
+							Join crypto-enthusiasts, entrepreneurs, blockchain startups, and freelancers in the Full Node open co-working area. With a fixed desk, you'll start the day in the same spot every day. Each open space membership comes with meeting rooms, utilities, a fully stocked coffee bar, prints and scans, 24/7 access, and more. 
 						</p>
-						<button id="more" class="btn-primary">
+						<button class="btn-primary button-more">
 							MORE
 						</button>
-						<button id="request" class="btn-primary">
+						<button class="btn-primary request">
 							REQUEST NOW
 						</button>
 				</div>
@@ -82,37 +81,35 @@ title: 'Membership'
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="plan">
 					<h3>
-						Fixed Desk
+						Flexible Desk
 					</h3>
-					<img src="/images/person_line.png">
+					<img src="/images/flex.jpg">
 						<div class="row at-a-glance">
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 								<p class="best-for">
 									<strong>Best for:</strong><br>
-									- Established teams of 2-6 people<br>
-									- Autonomy within community<br>
-									- Team collaboration and focus<br>
+									- Remote and part-time workers<br>
+									- Meetings<br>
+									- More than a week per month<br><br>
 								</p>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<p>
-									<strong>Starting at:</strong><br>
-									 2000€/month
+								<p class="cost">
+									 390€/month
 								</p>
 							</div>
 						</div>
 						<p class="desk-description">
-							Our lockable, private offices surrounded by glass walls can accommodate teams of 2, 4, or 6 people. They are fully furnished and include personal desks, ergonomic chairs, cabinets, whiteboards, and more. That of course all comes on top of a 24/7 access to beautifully designed meeting rooms, private phone booths, a fully stocked coffee bar, secure and super fast WiFi, and more amenities for your work space to bring out the most productive and creative you.
+							You like flexibility? We totally get it. With our flexible desk plan, you come as you go—just choose an open seat in our co-working area, enjoy all amenities, and be part of our community. 
 						</p>
-						<button id="more" class="btn-primary">
+						<button class="btn-primary button-more">
 							MORE
 						</button>
-						<button id="request" class="btn-primary">
+						<button class="btn-primary request" href="/join">
 							REQUEST NOW
 						</button>
 				</div>
 			</div>
 		</div>
-		<img class="image-mobile" src="/images/meetup_line.png">
 	</div>
 </section>

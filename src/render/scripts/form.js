@@ -28,7 +28,12 @@ $('.carousel').carousel({
     interval: false
 }); 
 
-$( "#more" ).click(function() {
+$( ".button-more" ).click(function() {
     $(this).parent().find(".desk-description").toggle();
-    console.log($(this));
+    $(this).parent().toggleClass("active");
+    if( $(this).text() == "LESS") {
+      $(this).text("MORE");
+    } else {
+      $(this).text("LESS");
+    }
 });
