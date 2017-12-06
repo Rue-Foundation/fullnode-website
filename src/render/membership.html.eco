@@ -18,7 +18,7 @@ title: 'Membership'
 					<h3>
 						Private Office
 					</h3>
-					<img src="/images/office.jpg">
+					<img src="/images/office_image.jpg">
 					<div class="row at-a-glance">
 						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 							<p class="best-for">
@@ -51,7 +51,7 @@ title: 'Membership'
 					<h3>
 						Fixed Desk
 					</h3>
-					<img src="/images/fixed.jpg">
+					<img src="/images/fixed_image.jpg">
 						<div class="row at-a-glance">
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 								<p class="best-for">
@@ -83,7 +83,7 @@ title: 'Membership'
 					<h3>
 						Flexible Desk
 					</h3>
-					<img src="/images/flex.jpg">
+					<img src="/images/flex_image.jpg">
 						<div class="row at-a-glance">
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 								<p class="best-for">
