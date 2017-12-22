@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>FULL NODE</title>
+	<link href="http://fullnode.berlin/atom.xml" rel="self"/>
+	<link href="http://fullnode.berlin"/>
+	<updated>2017-12-22T16:30:25.125Z</updated>
+	<id>http://fullnode.berlin</id>
+	<author>
+		<name>FULL NODE</name>
+		<email>info@fullnode.berlin</email>
+	</author>
+
+	
+</feed>

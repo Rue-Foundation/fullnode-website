@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>FULL NODE</title>
+	<meta name="description" content="Full Node is the backbone of your network—a workspace where you can learn, work, and grow together with other blockchain companies on your mission to build the future. " />
+	<meta name="keywords" content="blockchain, full node, ethereum, cosmos, co-working, berlin, gnosis, ethereum, bitcoin, hub, workspace" />
+	<meta name="author" content="FULL NODE" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.74.0" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+	<link rel="icon" type="image/png" href="/images/favicon.png" />
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /><link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,400i,700" /><link  rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><link  rel="stylesheet" href="/styles/style.css" />
+</head>
+<body>
+
+
+	<!-- Content -->
+	<nav role="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<button data-toggle="modal" data-target="#modal-menu">
+					<i class="fa fa-2x fa-bars"></i>
+				</button>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<a href="/">
+					<img id="logo" src="/images/FN_Logo_RGB.svg">
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<div class="pull-right">
+					<a class="btn btn-primary btn-light hidden-xs" href="/join">
+						Join Now
+					</a>
+					<div class="join-text">
+						<a class="hidden-lg hidden-md hidden-sm mono" href="/join">
+							Join
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<section id="join" class="light">
+	<div class="container">
+		<form id="join-form">
+		<div class="row">
+			<div id="description" class="col-lg-3 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+				<h1>
+					Join the<br>
+					tribe.
+				</h1>
+
+				<p>Meet like-minded people building a decentralized future, learn from each other, and grow together. Whether you're a seasoned blockchain enthusiast or new to the space—follow our curated events program, run your own events, and be part of our community.</p>
+
+				<a class="btn btn-primary btn-light drop-line" href="mailto:info@fullnode.berlin">
+					Drop Us a Line
+				</a>
+			</div>
+
+			<div class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+				<div class="input-group">
+					<input type="text" name="first_name" placeholder="First name*" aria-describedby="first-name" required>
+					<input type="text" name="last_name" placeholder="Last name*" aria-describedby="last-name" required>
+					<input type="email" name="email" placeholder="Email*" aria-describedby="email" required>
+					<input type="phone" name="phone" placeholder="Phone*" aria-describedby="phone" required>
+					<div class="question">
+						I identify my gender as:
+					</div>
+					<div class="answer">
+						<input class="radio" type="radio" id="female"
+						name="gender" value="female">
+						<label for="female">Female</label>
+
+						<input class="radio" type="radio" id="male"
+						name="gender" value="male">
+						<label for="male">Male</label>
+
+						<input class="radio" type="radio" id="trans"
+						name="gender" value="trans">
+						<label for="transgender">Trans</label>
+
+						<br>
+
+						<input class="radio" type="radio" id="other"
+						name="gender" value="other">
+						<label for="other">Other</label>
+
+						<input class="radio" type="radio" id="prefer_not"
+						name="gender" value="prefer_not">
+						<label for="prefer_not">Prefer not to disclose</label>
+
+					</div>
+					<input type="text" name="company" placeholder="Company name" aria-describedby="company-name">
+
+					<input type="url" name="website" placeholder="Website" aria-describedby="website">
+
+					<div class="question">
+						I am interested in: 
+					</div>
+
+					<div class="answer">
+						<input class="radio" type="radio" id="private-office"
+						name="desk_type" value="private_office">
+						<label for="private-office">Private Office</label>
+						
+						<input class="radio" type="radio" id="fixed-desk"
+						name="desk_type" value="fixed">
+						<label for="fixed-desk">Fixed Desk</label>
+
+						<br>
+
+						<input class="radio" type="radio" id="flex-desk"
+						name="desk_type" value="flex">
+						<label for="flex-desk">Flex Desk</label>
+					</div>
+
+					<input type="url" name="linkedin" placeholder="LinkedIn Profile URL" aria-describedby="linkedin">
+
+					<input type="text" name="connections" placeholder="Do you know any Full Node members&#8212;who?" aria-describedby="do-you-know-anyone-at-fullnode">
+
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+
+				<input type="text" name="how_you_heard" placeholder="How did you hear about us?" aria-describedby="referral">
+
+				<textarea name="project_desc" placeholder="Tell us a little about you and your project:"></textarea>
+
+				<p class="required">
+					*Required information
+				</p>
+
+
+				<p class="send-form">
+					Please send all of the above information to <a id="submit-email" href="mailto:membership@fullnode.berlin">membership@fullnode.berlin</a>, and we'll get back to you as soon as we can. 
+				</p>
+
+					<!--<label for="mailing_list_sign_up">Get the latest updates from us</label>-->
+
+				</div>
+			</div>
+		</form>
+		</div>
+	</div>
+</section>
+	
+	<!-- Mailing list -->
+<section class="light section-small">
+	<div class="container">
+		<div class="col-lg-12">
+			<form action="https://gnosis.us13.list-manage.com/subscribe/post?u=1a123436baa68728b8cfa3402&amp;id=d5cfae8747" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<p class="mailing-list">
+					To get the latest updates just submit your <input type="email" value="" name="EMAIL" placeholder="Email address" class="required email" id="mce-EMAIL"> <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">AND GO </button>
+				</p>
+			</form>
+		</div>
+	</div>
+</section>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+	<!-- Footer -->
+<footer id="contact">
+	<p>
+		FULL NODE &nbsp; Skalitzer Strasse 85-86, 10997 Berlin, Germany, <a href="mailto:info@fullnode.berlin">info@fullnode.berlin</a>
+
+		<span class="social-media">
+			<a href="http://www.facebook.com/fullnode.berlin" target="_blank">
+				<i class="fa fa-facebook-square"></i>
+			</a>
+			<a href="http://www.instagram.com/fullnode_berlin" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a href="http://www.twitter.com/fullnode_berlin" target="_blank">
+				<i class="fa fa-twitter-square"></i>
+			</a>
+		</div>
+	</p>
+</footer>
+
+	<!-- Modal -->
+<div id="modal-menu" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="navigation container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<button data-toggle="modal" data-target="#modal-menu">
+							<i class="fa fa-times-thin fa-2x"></i>
+						</button>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="/">
+							<img id="logo" src="/images/FN-Code_Logo_White.svg">
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<div class="pull-right">
+							<a class="hidden-xs btn btn-primary btn-light join-button" href="/join">
+								Join Now
+							</a>
+							<div class="join-text">
+								<a class="hidden-lg hidden-md hidden-sm mono" href="/join">
+									Join
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row menu-items">
+				<hr>
+				<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+					<a href="/membership">
+						Membership
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+					<a href="/events">
+						Events
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+					<a href="/#contact">
+						Contact
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+					<a href="/impressum">
+						Impressum
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script defer="defer" src="/scripts/script.js"></script>
+</body>
+</html>
