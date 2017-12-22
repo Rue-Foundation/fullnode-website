@@ -85,5 +85,7 @@
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<script defer="defer" src="/scripts/more.js"></script>
+
 </body>
 </html>

@@ -121,14 +121,13 @@ layout: 'default'
 					*Required information
 				</p>
 
-				<div class="join-now">
-					<input class="checkbox" type="checkbox" id="mailing_list_sign_up" name="mailing_list_sign_up">
 
-					<label for="mailing_list_sign_up">Get the latest updates from us</label>
+				<p class="send-form">
+					Please send all of the above information to <a id="submit-email" href="mailto:membership@fullnode.berlin">membership@fullnode.berlin</a>, and we'll get back to you as soon as we can. 
+				</p>
 
-					<button type="submit" id="submit-form" class="btn btn-primary btn-light active">
-						Join Now
-					</button>
+					<!--<label for="mailing_list_sign_up">Get the latest updates from us</label>-->
+
 				</div>
 			</div>
 		</form>

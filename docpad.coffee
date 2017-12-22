@@ -50,7 +50,6 @@ docpadConfig = {
 				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
 				"//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-				"/scripts/form.js"
 			]
 
 
@@ -96,6 +95,9 @@ docpadConfig = {
 	# Plugins
 
 	plugins:
+		ghpages:
+			deployRemote: 'origin'
+			deployBranch: 'master'
 
 
 	# =================================
